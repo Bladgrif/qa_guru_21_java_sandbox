@@ -18,28 +18,11 @@ public class Dog {
         System.out.println(this.name + " громко лает");
     }
 
-//    public void food(String food) {
-//        switch (food) {
-//            case "мясо": {
-//                System.out.println (this.name + " аппетитно сьедает и довольно виляет хвостом");
-//                break;
-//            }
-//            case "рыба": {
-//                System.out.println (this.name + " морщится, но все же сьедает");
-//                break;
-//            }
-//            default: {
-//                System.out.println (this.name + " подозрительно обнюхивает и осуждающе смотрит на вас");
-//                break;
-//            }
-//        }
-//    }
-
     public void food() {
         String randomFood = Food.dogFood();
         switch (randomFood) {
             case "котлету": {
-                System.out.println (this.name +" получает " + randomFood + " и аппетитно сьедает");
+                System.out.println (this.name +" получает " + randomFood + " и аппетитно съедает");
                 break;
             }
             case "косточку": {
@@ -64,6 +47,7 @@ public class Dog {
 
         }
     }
+
 
     @Override
     public String toString() {
