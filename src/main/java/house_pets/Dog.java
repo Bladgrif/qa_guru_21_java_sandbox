@@ -1,4 +1,4 @@
-package dogs;
+package house_pets;
 
 public class Dog {
 
