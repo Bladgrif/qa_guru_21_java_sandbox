@@ -9,6 +9,9 @@ public class Main {
         Fish nemo = new Fish("Nemo", "black", 'S', false);
         Robot t1000 = new Robot("T1000", "silver", 'L', true);
 
+        pluto.food();
+
+
 
         System.out.println(pluto);
         System.out.println(mira);
@@ -18,47 +21,6 @@ public class Main {
 //        pluto.food("мясо");
 //        pluto.food("конфета");
 
-        // значения могут дублироваться
-        // имеют порядок, последовательность
-        // доступ по индеку мгновено
-        // сложно вставлять элементы в середину
-        // автоматически увеличивается
-        List<String> fruits= new ArrayList<>();
-        fruits.add("яблоко");
-        fruits.add("груша");
-        fruits.add("вишня");
-        fruits.add("яблоко");
-        System.out.println(fruits);
-        System.out.println(fruits.get(1));
-
-        // значения могут дублироваться
-        // имеют порядок, последовательность
-        // доступ по индеку неудобный
-        // легко вставлять элементы в середину
-        // автоматически увеличивается
-        // не используется
-        List<String> fruits2= new LinkedList<>();
-        fruits2.add("яблоко");
-        fruits2.add("груша");
-        fruits2.add("вишня");
-        fruits2.add("яблоко");
-        System.out.println(fruits2);
-        System.out.println(fruits.get(1));
-
-        Set<String> fruits3= new HashSet<>();
-        fruits3.add("яблоко");
-        fruits3.add("груша");
-        fruits3.add("вишня");
-        fruits3.add("яблоко");
-        System.out.println(fruits3);
-//        System.out.println(fruits3.get(1));
-
-        Set<String> fruits4= new LinkedHashSet<>();
-        fruits4.add("яблоко");
-        fruits4.add("груша");
-        fruits4.add("вишня");
-        fruits4.add("яблоко");
-        System.out.println(fruits4);
 
     }
 }

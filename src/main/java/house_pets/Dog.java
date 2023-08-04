@@ -18,20 +18,50 @@ public class Dog {
         System.out.println(this.name + " громко лает");
     }
 
-    public void food(String food) {
-        switch (food) {
-            case "мясо": {
-                System.out.println (this.name + " аппетитно сьедает и довольно виляет хвостом");
+//    public void food(String food) {
+//        switch (food) {
+//            case "мясо": {
+//                System.out.println (this.name + " аппетитно сьедает и довольно виляет хвостом");
+//                break;
+//            }
+//            case "рыба": {
+//                System.out.println (this.name + " морщится, но все же сьедает");
+//                break;
+//            }
+//            default: {
+//                System.out.println (this.name + " подозрительно обнюхивает и осуждающе смотрит на вас");
+//                break;
+//            }
+//        }
+//    }
+
+    public void food() {
+        String randomFood = Food.dogFood();
+        switch (randomFood) {
+            case "котлета": {
+                System.out.println (this.name +" получает " + randomFood + " и аппетитно сьедает и довольно виляет хвостом");
                 break;
             }
-            case "рыба": {
-                System.out.println (this.name + " морщится, но все же сьедает");
+            case "косточка": {
+                System.out.println (this.name +" получает " + randomFood + " и начинает грызть виляя хвостом");
                 break;
             }
-            default: {
-                System.out.println (this.name + " подозрительно обнюхивает и осуждающе смотрит на вас");
+            case "сухой собачий корм": {
+                System.out.println (this.name +" получает " + randomFood + " и просто ест из миски");
                 break;
             }
+            case "кусок колбаски": {
+                System.out.println (this.name +" получает " + randomFood + " и съедает за секунду, а потом довольно просит еще");
+                break;
+            }
+            case "сосиска": {
+                System.out.println (this.name +" получает " + randomFood + " и делает круг радости, а потом съедает");
+                break;
+            }
+            default:
+                System.out.println (this.name +" получает " + randomFood + " и подозрительно обнюхивает, а потом осуждающе смотрит на вас");
+                break;
+
         }
     }
 
