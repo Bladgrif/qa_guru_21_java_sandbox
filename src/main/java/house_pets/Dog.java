@@ -38,12 +38,12 @@ public class Dog {
     public void food() {
         String randomFood = Food.dogFood();
         switch (randomFood) {
-            case "котлета": {
-                System.out.println (this.name +" получает " + randomFood + " и аппетитно сьедает и довольно виляет хвостом");
+            case "котлету": {
+                System.out.println (this.name +" получает " + randomFood + " и аппетитно сьедает");
                 break;
             }
-            case "косточка": {
-                System.out.println (this.name +" получает " + randomFood + " и начинает грызть виляя хвостом");
+            case "косточку": {
+                System.out.println (this.name +" получает " + randomFood + " и начинает грызть");
                 break;
             }
             case "сухой собачий корм": {
@@ -51,10 +51,10 @@ public class Dog {
                 break;
             }
             case "кусок колбаски": {
-                System.out.println (this.name +" получает " + randomFood + " и съедает за секунду, а потом довольно просит еще");
+                System.out.println (this.name +" получает " + randomFood + " и съедает за секунду");
                 break;
             }
-            case "сосиска": {
+            case "сосиску": {
                 System.out.println (this.name +" получает " + randomFood + " и делает круг радости, а потом съедает");
                 break;
             }
