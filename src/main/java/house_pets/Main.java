@@ -15,6 +15,8 @@ public class Main {
         Food.addNewFood("Конфета");
         System.out.println(foodForDog);
 
+        pluto.golos();
+
 
 
 

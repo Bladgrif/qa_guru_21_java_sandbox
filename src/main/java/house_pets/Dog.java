@@ -14,7 +14,7 @@ public class Dog {
         this.isClever = isClever;
     }
 
-    public void gav() {
+    public void golos() {
         System.out.println(this.name + " громко лает");
     }
 
