@@ -1,3 +1,5 @@
+package lesha_marshal_java;
+
 public class Lesson7 {
     public static void main(String[] args) {
         System.out.println("изучаем циклы");
